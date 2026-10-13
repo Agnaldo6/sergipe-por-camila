@@ -79,10 +79,8 @@ Um amigo recomendou uma hospedagem no estilo turismo de base comunitária ao lad
 Todo o material necessário para a prática está incluído, garantindo um ambiente para o desenvolvimento de suas obras: goivas, tintas, rolos, folhas, entre outros. Se você é artista e quer aprender essa técnica, ou nunca praticou nenhuma outra linguagem artística antes e gostaria de experimentar, seja bem-vindo.`,
       tip: "Fale com o ateliê para confirmar horário e próxima turma.",
       links: [["Falar com o ateliê", "https://www.instagram.com/p/DKQKNbEyTsQ/"]],
-      image: "assets/locais/oficina-xilogravura.webp",
-      imageAlt: "Artistas exibem gravuras em um ateliê sergipano",
-      imageSource: "https://redeglobo.globo.com/se/tvsergipe/noticia/sabado-o-giro-sergipe-esta-de-volta-destacando-os-50-anos-do-fasc.ghtml",
-      imageCredit: "TV Sergipe / Rede Globo"
+      image: "assets/locais/oficina-xilogravura-grupo.png",
+      imageAlt: "Turma de oficina de xilogravura exibe as gravuras produzidas no ateliê"
     },
     {
       id: 6,

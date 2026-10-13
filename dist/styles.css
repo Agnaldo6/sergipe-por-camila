@@ -95,10 +95,10 @@ button, summary, a { -webkit-tap-highlight-color: transparent; }
 .header-pill { display: flex; align-items: center; gap: clamp(0.5rem, 2vw, 1.5rem); min-height: 4.5rem; max-width: 100%; padding: 0.35rem 0.55rem; color: var(--ink); background: var(--yellow); border-radius: 999px; box-shadow: 0 8px 24px rgba(17,17,15,0.13); transition: color 300ms ease, background 300ms ease; }
 .brand { display: inline-flex; align-items: center; gap: 0.55rem; padding: 0.25rem 0.7rem 0.25rem 0.25rem; color: inherit; border-radius: 999px; text-decoration: none; white-space: nowrap; font-size: clamp(1.05rem, 1.4vw, 1.35rem); font-weight: 600; letter-spacing: -0.025em; transition: transform 250ms var(--ease); }
 .brand:hover { transform: translateY(-2px); }
-.brand-art { display: grid; place-items: center; flex: none; width: 3.5rem; height: 3.35rem; overflow: hidden; border-radius: 50%; }
+.brand-art { display: grid; place-items: center; flex: none; width: 3.5rem; height: 3.35rem; overflow: hidden; background: var(--yellow); border-radius: 50%; }
 .brand-art img { width: 3.25rem; height: 3.25rem; object-fit: contain; }
-.brand-art .motif-cashew { width: 3.1rem; transition: transform 450ms var(--ease); }
-.brand:hover .motif-cashew, .brand:focus-visible .motif-cashew { transform: rotate(-8deg) scale(1.08); }
+.brand-art .motif-cashew { width: 2.55rem; transition: transform 450ms var(--ease); }
+.brand:hover .motif-cashew, .brand:focus-visible .motif-cashew { transform: rotate(-6deg) scale(1.02); }
 .site-header nav { display: flex; align-items: center; gap: 0.1rem; }
 .site-header nav a { display: inline-flex; align-items: center; justify-content: center; min-height: 3.55rem; padding: 0.75rem clamp(0.85rem, 1.5vw, 1.4rem); color: inherit; border-radius: 999px; text-decoration: none; white-space: nowrap; font-size: 0.9rem; font-weight: 700; transition: transform 250ms var(--ease), background 250ms ease; }
 .site-header nav a:hover, .site-header nav a:focus-visible { transform: translateY(-2px); background: rgba(17,17,15,0.1); }
@@ -166,7 +166,7 @@ button, summary, a { -webkit-tap-highlight-color: transparent; }
 .statement-panel h2 span { display: block; will-change: transform, opacity; }
 .js-motion .statement-panel h2 { display: grid; align-items: start; }
 .js-motion .statement-panel h2 span { grid-area: 1 / 1; }
-.statement-crab { display: block; width: min(28rem, 38vw); max-width: 100%; height: clamp(10rem, 22svh, 13rem); margin-bottom: 0.5rem; object-fit: contain; object-position: left center; mix-blend-mode: screen; }
+.statement-crab { display: block; width: min(28rem, 38vw); max-width: 100%; height: clamp(10rem, 22svh, 13rem); margin-bottom: 0.5rem; object-fit: contain; object-position: left center; filter: grayscale(1) contrast(1.55) brightness(0.72); mix-blend-mode: screen; }
 .js-motion .statement-crab { opacity: var(--crab-opacity, 0); transform: translateY(var(--crab-y, 1.5rem)); will-change: opacity, transform; }
 .statement-head { color: white; opacity: var(--statement-head-opacity, 0); transform: translateY(calc((1 - var(--statement-entry, 1)) * 3.25rem)); }
 .statement-subhead { color: var(--yellow); opacity: var(--statement-yellow-reveal, 1); transform: translateY(calc((1 - var(--statement-yellow-reveal, 1)) * 3.75rem)); }
@@ -234,6 +234,7 @@ html:not(.js-motion) .statement-head, html:not(.js-motion) .statement-subhead, h
 .place-card[hidden] { display: none; }
 .place-media { position: relative; aspect-ratio: 16 / 10; overflow: hidden; background: var(--yellow); }
 .place-media img { width: 100%; height: 100%; object-fit: cover; transition: transform 900ms var(--ease); }
+.place-card[data-place-id="5"] .place-media img { object-position: center 55%; filter: brightness(1.12) contrast(0.96) saturate(1.02); }
 .place-card[data-place-id="36"] .place-media img { object-position: center bottom; }
 .place-card:hover .place-media img { transform: scale(1.045); }
 .place-icon { position: absolute; right: 1rem; bottom: 1rem; display: grid; place-items: center; width: 4.6rem; height: 4.6rem; background: var(--yellow); border: 1px solid rgba(17,17,15,0.12); border-radius: 50%; box-shadow: 0 8px 30px rgba(17,17,15,0.18); transition: transform 500ms var(--ease), background 250ms ease; }
@@ -333,6 +334,7 @@ html:not(.js-motion) .statement-head, html:not(.js-motion) .statement-subhead, h
   .brand { padding: 0.15rem 0.75rem; font-size: 1.05rem; }
   .brand-art { width: 2.8rem; height: 2.7rem; }
   .brand-art img { width: 2.7rem; height: 2.7rem; }
+  .brand-art .motif-cashew { width: 2.05rem; }
   .hero-scroll { height: auto; background: var(--mist); }
   .hero { position: relative; height: auto; min-height: auto; padding-top: 9rem; }
   .hero-woodcut { position: relative; right: auto; bottom: auto; width: min(78vw, 23rem); height: auto; margin: 0 -1rem -2rem auto; transform: rotate(-1deg); }
